@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_dialog_rounded"
+    android:backgroundTint="#FFFFFF"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/rowTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Project Report"
+        android:textColor="#1E293B"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/rowAssignedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assigned: 10/04/2026"
+            android:textColor="#94A3B8"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/rowTaskDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline: 25/04/2026"
+            android:textColor="#EF4444"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginBottom="4dp">
+
+    <ImageView
+        android:id="@+id/ivFileIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_file"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:background="@drawable/bg_icon_circle_light" />
+
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivFileIcon"
+        android:layout_toStartOf="@id/tvUploadDateTime"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:text="Final_Project_Report.pdf"
+        android:textColor="#0F172A"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:lineSpacingExtra="3dp" />
+
+    <TextView
+        android:id="@+id/tvFileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFileName"
+        android:layout_toEndOf="@id/ivFileIcon"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:text="By: rahul.dev@mail.com"
+        android:textColor="#64748B"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvUploadDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="18 Apr\n02:15 PM"
+        android:gravity="end"
+        android:textColor="#94A3B8"
+        android:textSize="11sp"
+        android:lineSpacingExtra="2dp"/>
+
+</RelativeLayout>

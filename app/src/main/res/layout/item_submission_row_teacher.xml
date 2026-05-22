@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#EFF6FF"
+    android:layout_marginBottom="4dp">
+
+    <ImageView
+        android:id="@+id/ivFileIconTeacher"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_teacher_feedback"
+        android:layout_alignParentTop="true"
+        android:padding="6dp"
+        android:background="@drawable/bg_icon_circle_primary_light"
+        />
+
+    <TextView
+        android:id="@+id/tvFileNameTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivFileIconTeacher"
+        android:layout_toStartOf="@id/tvUploadDateTimeTeacher"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:text="Mentor Feedback"
+        android:textColor="#1E293B"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:lineSpacingExtra="3dp" />
+
+    <TextView
+        android:id="@+id/tvFileInfoTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFileNameTeacher"
+        android:layout_toEndOf="@id/ivFileIconTeacher"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:text="From: Guide / Teacher"
+        android:textColor="#475569"
+        android:textSize="12sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvUploadDateTimeTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="18 Apr\n02:15 PM"
+        android:gravity="end"
+        android:textColor="#94A3B8"
+        android:textSize="11sp"
+        android:lineSpacingExtra="2dp"/>
+
+</RelativeLayout>
